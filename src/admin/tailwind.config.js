@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+        './vendor/solution-forest/filament-tree/resources/**/*.blade.php',
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
 }
 
