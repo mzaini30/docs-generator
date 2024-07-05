@@ -6,6 +6,7 @@ use App\Filament\Resources\KontenResource\Pages;
 use App\Filament\Resources\KontenResource\RelationManagers;
 use App\Models\Konten;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -25,7 +26,9 @@ class KontenResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('title')
+                ->required()
+                ->columnSpan(2),
             ]);
     }
 
